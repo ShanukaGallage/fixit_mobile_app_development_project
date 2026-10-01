@@ -46,7 +46,7 @@ class NearbyIssueCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 12),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
-        side: BorderSide(color: Colors.grey.withOpacity(0.2)),
+        side: BorderSide(color: Colors.grey.withValues(alpha: 0.2)),
       ),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
@@ -59,7 +59,7 @@ class NearbyIssueCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(
@@ -152,7 +152,7 @@ class _Badge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: isOutlined ? Colors.transparent : color.withOpacity(0.1),
+        color: isOutlined ? Colors.transparent : color.withValues(alpha: 0.1),
         border: isOutlined ? Border.all(color: color) : null,
         borderRadius: BorderRadius.circular(6),
       ),

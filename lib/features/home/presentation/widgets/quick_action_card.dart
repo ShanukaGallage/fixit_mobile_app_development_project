@@ -19,7 +19,7 @@ class QuickActionCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     
     return Material(
-      color: isPrimary ? colorScheme.primary : colorScheme.surfaceVariant.withOpacity(0.5),
+      color: isPrimary ? colorScheme.primary : colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
       borderRadius: BorderRadius.circular(16),
       clipBehavior: Clip.antiAlias,
       child: InkWell(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../domain/models/report_model.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-
 class ReportCard extends StatelessWidget {
   final ReportModel report;
 

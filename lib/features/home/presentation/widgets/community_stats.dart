@@ -9,13 +9,13 @@ class CommunityStats extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Card(
         elevation: 0,
-        color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.4),
+        color: Theme.of(context).colorScheme.primaryContainer.withValues(alpha: 0.4),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: BorderSide(color: Theme.of(context).colorScheme.primary.withOpacity(0.1)),
+          side: BorderSide(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)),
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
+        child: const Padding(
+          padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -81,12 +81,14 @@ class _StatItem extends StatelessWidget {
 }
 
 class _Divider extends StatelessWidget {
+  const _Divider();
+
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 40,
       width: 1,
-      color: Colors.grey.withOpacity(0.3),
+      color: Colors.grey.withValues(alpha: 0.3),
     );
   }
 }
